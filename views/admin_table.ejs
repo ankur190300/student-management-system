@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title><%= title%></title>
+    <script src="https://kit.fontawesome.com/5ffad168d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/admin_tablestyle.css">
+</head>
+<body>
+    <header>
+
+         <i class="fas fa-table"></i> Search table <select id="drop_down_menu" onchange ="show_table()">
+		<option selected>
+		enter table name
+		</option>
+		<option>
+		teachers 
+		</option>
+		<option>
+		students
+		</option>
+		<option>
+		courses
+		</option>
+		<option>
+		department
+		</option>
+		<option>
+		students admitted
+		</option>
+
+		</select>
+
+
+    </header>
+    <table align="center">
+        <tr>
+            <% for (let i in table[0]){
+            %>
+            <th>
+                <%= i%>
+
+            </th>
+
+
+            <%}%>
+        </tr>
+
+
+<% for (let i in table){%>
+        <tr>
+
+            <% for(let j in table[i]) { %>
+
+            <td>
+
+                <%= table[i][j] %>
+            </td>
+
+            <% } %>
+        </tr>
+
+
+        <%}%>
+
+        
+</table>
+
+<script src="/js/admin_tablescript.js"></script>
+<script>
+var a = <%= id%>
+console.log(a);
+document.getElementById("drop_down_menu").selectedIndex= a;
+</script>
+</body>
+</html> 

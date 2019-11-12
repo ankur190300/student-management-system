@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/sign-upstyle.css" />
+
+
+</head>
+<body>
+    <form  action= method="POST" >
+		<h1>Sign-up</h1>
+		<label for ="name">
+		NAME
+		</label>
+		<input type="text" placeholder= "enter your name" id="name" required />
+        <label for="email">
+            EMAIL
+        </label>
+        <input type="email" placeholder="your email goes here" id="email" required />
+        <label for=" password">
+            PASSWORD
+        </label>
+        <input type="password" placeholder="enter your password" id="password" required />
+		<label for="confirm_password">
+            CONFIRM PASSWORD
+		</label>
+        <input type="password" placeholder="confirm your password" id="confirm_password" required />
+		<br>
+
+        <input type="submit" placeholder="submit" id="submit" />
+
+    </form>
+</body>
+</html>

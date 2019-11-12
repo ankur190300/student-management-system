@@ -1,0 +1,50 @@
+﻿body {
+   // background-image: url("http://pluspng.com/img-png/png-hd-student-reading-cartoon-animation-of-a-boy-child-student-is-reading-education-book-on-his-desk-with-science-maths-chemistry-biology-engineering-physics-and-other-creative-1920.png");
+    //background-blend-mode:color;
+    background-image: url("http://pluspng.com/img-png/png-hd-student-reading-cartoon-animation-of-a-girl-student-is-reading-education-book-on-her-desk-in-class-with-1920.png");
+   // background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.1)),url("http://pluspng.com/img-png/png-hd-student-reading-cartoon-animation-of-a-boy-child-student-is-reading-education-book-on-his-desk-with-science-maths-chemistry-biology-engineering-physics-and-other-creative-1920.png");
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}/*
+ td, tr,th{
+    border:2px solid black;
+  
+}*/
+ td{
+     border-width:0px 2px 0px 2px;
+     border:solid transparent;
+ }
+table {
+    //border-collapse: collapse;
+    width: 50vw;
+    table-layout: fixed;
+    font-size:larger;
+}
+h1{
+    font-size:3em;
+}
+tr{
+    height :15vh;
+    
+   // width :80vw;
+}
+tr:hover{
+transform:scale(1.1);
+transition:0.7s;
+
+}
+    
+
+table tr:nth-child(2n+1) td {
+    background-color: rgba(32, 178, 170, 0.65);
+}
+table tr:nth-child(2n) td {
+    background-color: rgba(255, 127, 80, 0.67);
+}
+
+
+
+
+
+

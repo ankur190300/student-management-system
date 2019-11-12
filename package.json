@@ -1,0 +1,13 @@
+{
+  "name": "student-enrollment-system",
+  "version": "0.0.0",
+  "description": "student enrollment system",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,32 @@
+﻿body {
+    text-align: center;
+    background-image: url("https://new.graphicpanic.com/wp-content/uploads/2015/09/white-paper-powerpoint-background.jpg");
+    background-image: url("https://www.onlygfx.com/wp-content/uploads/2016/08/wrinkled-brown-paper-3.jpg") ;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+table{
+    border-collapse:collapse;
+    table-layout:fixed;
+    width:90vw;
+}
+table , tr, th , td{
+
+    border: 2px solid black;
+}
+th{
+    height:10vh;
+    font-size:1.4em;
+}
+td{
+    height:4vh;
+}
+#drop_down_menu{
+    margin-bottom:5vh;
+    font-size:0.7em;
+    //text-align:center;
+}
+header{
+    font-size:2em;
+}

@@ -1,0 +1,81 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>student enrollment system</Name>
+    <RootNamespace>student enrollment system</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>86fa9f26-043f-499a-ad20-8f785e4d9898</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="assets\css\admin_tablestyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="assets\css\homestyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="assets\css\sign-upstyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="assets\css\student_tablestyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="assets\css\sign-instyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="assets\images\college_background.jpg" />
+    <Content Include="assets\images\forms2.jpg" />
+    <Content Include="assets\images\forms3.jpg" />
+    <Content Include="assets\images\logo.jpeg" />
+    <Content Include="assets\images\sample.jpg" />
+    <Content Include="assets\images\samplefinal.jpg" />
+    <Content Include="assets\images\student_back.jpg" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="views\admin_table.ejs" />
+    <Content Include="views\home.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\admin_table.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\sign_up.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\sign_in.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\student_table.ejs">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="assets\css\" />
+    <Folder Include="assets\images\" />
+    <Folder Include="assets\js\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+</Project>

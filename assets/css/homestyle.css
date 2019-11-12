@@ -1,0 +1,63 @@
+﻿body {
+    background-image:url('../images/samplefinal.jpg');
+   // background-color:green;
+    background-size:cover;
+    text-align:center;
+}
+#logo_pic{
+    //align-self:center;
+    width:20%;
+    margin:10vh auto 30px auto;
+    display:block;
+
+
+}
+a{
+    text-decoration:none;
+    color:inherit;
+    
+}
+div{
+    height:50px;
+    //background-color:blue;
+    width:20%;
+    display:inline-block;
+    margin-bottom:30px;
+    text-align:center;
+    vertical-align:central;
+    line-height:50px;
+    font-weight:700;
+    font-size:120%;
+    color:white;
+    
+}
+#stu_sin{
+    background-color:seagreen;
+}
+
+#stu_sin:hover {
+    background-color:white;
+    font-size:140%;
+    color:seagreen;
+    transition:0.7s;
+}
+
+#fac_sin{
+    background-color:darksalmon;
+}
+#fac_sin:hover {
+    background-color: white;
+    font-size: 140%;
+    color: darksalmon;
+    transition: 0.7s;
+}
+
+#sin_up{
+    background-color:darkturquoise;
+}
+#sin_up:hover {
+    background-color: white;
+    font-size: 140%;
+    color: darkturquoise;
+    transition: 0.7s;
+}
